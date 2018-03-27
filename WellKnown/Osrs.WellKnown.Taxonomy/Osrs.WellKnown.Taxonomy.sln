@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.WellKnown.Taxonomy", "Osrs.WellKnown.Taxonomy\Osrs.WellKnown.Taxonomy.csproj", "{A61A5A64-313B-4049-B3B2-6039BE4F4562}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.WellKnown.Taxonomy.Module", "Osrs.WellKnown.Taxonomy.Module\Osrs.WellKnown.Taxonomy.Module.csproj", "{F323AF38-9965-42E6-9DBC-D92356E03899}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A61A5A64-313B-4049-B3B2-6039BE4F4562} = {A61A5A64-313B-4049-B3B2-6039BE4F4562}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.WellKnown.Taxonomy.Providers.Postgres", "Osrs.WellKnown.Taxonomy.Providers.Postgres\Osrs.WellKnown.Taxonomy.Providers.Postgres.csproj", "{01FA6C5F-F86C-4B5C-AB29-39EAE8F1CCDF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F323AF38-9965-42E6-9DBC-D92356E03899} = {F323AF38-9965-42E6-9DBC-D92356E03899}
+		{A61A5A64-313B-4049-B3B2-6039BE4F4562} = {A61A5A64-313B-4049-B3B2-6039BE4F4562}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingApp", "TestingApp\TestingApp.csproj", "{8F53772F-A35A-4851-9305-06FDAAD0CF70}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F323AF38-9965-42E6-9DBC-D92356E03899} = {F323AF38-9965-42E6-9DBC-D92356E03899}
+		{01FA6C5F-F86C-4B5C-AB29-39EAE8F1CCDF} = {01FA6C5F-F86C-4B5C-AB29-39EAE8F1CCDF}
+		{A61A5A64-313B-4049-B3B2-6039BE4F4562} = {A61A5A64-313B-4049-B3B2-6039BE4F4562}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A61A5A64-313B-4049-B3B2-6039BE4F4562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A61A5A64-313B-4049-B3B2-6039BE4F4562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A61A5A64-313B-4049-B3B2-6039BE4F4562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A61A5A64-313B-4049-B3B2-6039BE4F4562}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F323AF38-9965-42E6-9DBC-D92356E03899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F323AF38-9965-42E6-9DBC-D92356E03899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F323AF38-9965-42E6-9DBC-D92356E03899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F323AF38-9965-42E6-9DBC-D92356E03899}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01FA6C5F-F86C-4B5C-AB29-39EAE8F1CCDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01FA6C5F-F86C-4B5C-AB29-39EAE8F1CCDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01FA6C5F-F86C-4B5C-AB29-39EAE8F1CCDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01FA6C5F-F86C-4B5C-AB29-39EAE8F1CCDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F53772F-A35A-4851-9305-06FDAAD0CF70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F53772F-A35A-4851-9305-06FDAAD0CF70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F53772F-A35A-4851-9305-06FDAAD0CF70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F53772F-A35A-4851-9305-06FDAAD0CF70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

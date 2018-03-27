@@ -1,0 +1,11 @@
+﻿{
+  "Osrs.Runtime.Logging.LogManager, Osrs.Runtime.Logging.Core": {
+    "provider": "Osrs.Runtime.Logging.Providers.FlatFileLogFactory, Osrs.Runtime.Logging.Providers.FlatFileLogger"
+  },
+  "Osrs.Runtime.Logging.Providers.FlatFileLogFactory, Osrs.Runtime.Logging.Providers.FlatFileLogger": {
+    "fileName": "B:\\Data\\sampleLog.log"
+  },
+  "TestingApp.Program, TestingApp": {
+    "listenerUrls": [ "http://localhost:4000", "http://localhost:4040" ]
+  }
+}

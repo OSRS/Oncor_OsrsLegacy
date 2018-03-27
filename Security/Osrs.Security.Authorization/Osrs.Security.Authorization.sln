@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.Security.Authorization", "Osrs.Security.Authorization\Osrs.Security.Authorization.csproj", "{F95A992E-EFB2-4B45-B848-EB389289D209}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.Security.Authorization.Module", "Osrs.Security.Authorization.Module\Osrs.Security.Authorization.Module.csproj", "{BDADFCD9-98C9-41F1-A336-9E0A2A220835}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.Security.Authorization.Providers.Postgres", "Osrs.Security.Authorization.Providers.Postgres\Osrs.Security.Authorization.Providers.Postgres.csproj", "{316033D0-B1EB-46F5-AE2C-D1C9DF766E95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingApp", "TestingApp\TestingApp.csproj", "{EA47A0F5-9A4F-4B85-BD2E-04E3DB2A183A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.Security.Authorization.Providers.Cache", "Osrs.Security.Authorization.Providers.Cache\Osrs.Security.Authorization.Providers.Cache.csproj", "{04459C3A-BA51-40CE-822A-4AA62CADBED7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F95A992E-EFB2-4B45-B848-EB389289D209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F95A992E-EFB2-4B45-B848-EB389289D209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F95A992E-EFB2-4B45-B848-EB389289D209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F95A992E-EFB2-4B45-B848-EB389289D209}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDADFCD9-98C9-41F1-A336-9E0A2A220835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDADFCD9-98C9-41F1-A336-9E0A2A220835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDADFCD9-98C9-41F1-A336-9E0A2A220835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDADFCD9-98C9-41F1-A336-9E0A2A220835}.Release|Any CPU.Build.0 = Release|Any CPU
+		{316033D0-B1EB-46F5-AE2C-D1C9DF766E95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{316033D0-B1EB-46F5-AE2C-D1C9DF766E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{316033D0-B1EB-46F5-AE2C-D1C9DF766E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{316033D0-B1EB-46F5-AE2C-D1C9DF766E95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA47A0F5-9A4F-4B85-BD2E-04E3DB2A183A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA47A0F5-9A4F-4B85-BD2E-04E3DB2A183A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA47A0F5-9A4F-4B85-BD2E-04E3DB2A183A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA47A0F5-9A4F-4B85-BD2E-04E3DB2A183A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04459C3A-BA51-40CE-822A-4AA62CADBED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04459C3A-BA51-40CE-822A-4AA62CADBED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04459C3A-BA51-40CE-822A-4AA62CADBED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04459C3A-BA51-40CE-822A-4AA62CADBED7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

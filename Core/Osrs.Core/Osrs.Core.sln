@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.Core", "Osrs.Core\Osrs.Core.csproj", "{53BF0807-8939-4729-A4DD-D614C9E8FA22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingApp", "TestingApp\TestingApp.csproj", "{0565EB4A-0955-4584-BDAE-37C82E3FF7BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.Text", "Osrs.Text\Osrs.Text.csproj", "{B98679E7-8429-44C3-81A5-1E64A5B07FE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.Globalization", "Osrs.Globalization\Osrs.Globalization.csproj", "{074E1624-5277-4CC1-A94F-5403CA64DF53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53BF0807-8939-4729-A4DD-D614C9E8FA22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53BF0807-8939-4729-A4DD-D614C9E8FA22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53BF0807-8939-4729-A4DD-D614C9E8FA22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53BF0807-8939-4729-A4DD-D614C9E8FA22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0565EB4A-0955-4584-BDAE-37C82E3FF7BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0565EB4A-0955-4584-BDAE-37C82E3FF7BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0565EB4A-0955-4584-BDAE-37C82E3FF7BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0565EB4A-0955-4584-BDAE-37C82E3FF7BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B98679E7-8429-44C3-81A5-1E64A5B07FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B98679E7-8429-44C3-81A5-1E64A5B07FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B98679E7-8429-44C3-81A5-1E64A5B07FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B98679E7-8429-44C3-81A5-1E64A5B07FE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{074E1624-5277-4CC1-A94F-5403CA64DF53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{074E1624-5277-4CC1-A94F-5403CA64DF53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{074E1624-5277-4CC1-A94F-5403CA64DF53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{074E1624-5277-4CC1-A94F-5403CA64DF53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

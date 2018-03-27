@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.WellKnown.Organizations", "Osrs.WellKnown.Organizations\Osrs.WellKnown.Organizations.csproj", "{B2D8F5C6-E5B7-4E34-8AED-46D36536EF41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.WellKnown.Organizations.Module", "Osrs.WellKnown.Organizations.Module\Osrs.WellKnown.Organizations.Module.csproj", "{2143690C-F4C4-4A08-B0DA-B79A8FF80F06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.WellKnown.Organizations.Providers.Postgres", "Osrs.WellKnown.Organizations.Providers.Postgres\Osrs.WellKnown.Organizations.Providers.Postgres.csproj", "{E7A79895-6D92-4C79-B308-6F93B54B670E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingApp", "TestingApp\TestingApp.csproj", "{FA5CBC9F-5D01-4B56-AA24-C83551D61D40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.WellKnown.OrganizationHierarchies", "Osrs.WellKnown.OrganizationHierarchies\Osrs.WellKnown.OrganizationHierarchies.csproj", "{5843ED7C-326D-421D-B0C2-B2E2261CF2AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.WellKnown.OrganizationHierarchies.Module", "Osrs.WellKnown.OrganizationHierarchies.Module\Osrs.WellKnown.OrganizationHierarchies.Module.csproj", "{EF279BCC-FBAA-40A7-9645-4462E0E4E59D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.WellKnown.OrganizationHierarchies.Providers.Postgres", "Osrs.WellKnown.OrganizationHierarchies.Providers.Postgres\Osrs.WellKnown.OrganizationHierarchies.Providers.Postgres.csproj", "{E12578A0-7AC0-49F3-857A-AD15CED28C8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2D8F5C6-E5B7-4E34-8AED-46D36536EF41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2D8F5C6-E5B7-4E34-8AED-46D36536EF41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2D8F5C6-E5B7-4E34-8AED-46D36536EF41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2D8F5C6-E5B7-4E34-8AED-46D36536EF41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2143690C-F4C4-4A08-B0DA-B79A8FF80F06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2143690C-F4C4-4A08-B0DA-B79A8FF80F06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2143690C-F4C4-4A08-B0DA-B79A8FF80F06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2143690C-F4C4-4A08-B0DA-B79A8FF80F06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7A79895-6D92-4C79-B308-6F93B54B670E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7A79895-6D92-4C79-B308-6F93B54B670E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7A79895-6D92-4C79-B308-6F93B54B670E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7A79895-6D92-4C79-B308-6F93B54B670E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA5CBC9F-5D01-4B56-AA24-C83551D61D40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA5CBC9F-5D01-4B56-AA24-C83551D61D40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA5CBC9F-5D01-4B56-AA24-C83551D61D40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA5CBC9F-5D01-4B56-AA24-C83551D61D40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5843ED7C-326D-421D-B0C2-B2E2261CF2AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5843ED7C-326D-421D-B0C2-B2E2261CF2AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5843ED7C-326D-421D-B0C2-B2E2261CF2AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5843ED7C-326D-421D-B0C2-B2E2261CF2AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF279BCC-FBAA-40A7-9645-4462E0E4E59D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF279BCC-FBAA-40A7-9645-4462E0E4E59D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF279BCC-FBAA-40A7-9645-4462E0E4E59D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF279BCC-FBAA-40A7-9645-4462E0E4E59D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E12578A0-7AC0-49F3-857A-AD15CED28C8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E12578A0-7AC0-49F3-857A-AD15CED28C8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E12578A0-7AC0-49F3-857A-AD15CED28C8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E12578A0-7AC0-49F3-857A-AD15CED28C8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

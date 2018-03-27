@@ -1,0 +1,8 @@
+﻿{
+  "listenerUrls": [ "http://localhost:4000", "http://localhost:4040" ],
+  "simpleFileHandler": {
+    "rootDirectory": "Y:\\testing",
+    "defaultFiles": [ "default.htm", "default.html", "index.htm", "index.html" ],
+    "allowedExtensions": [ "htm", "html", "css", "js", "gif", "jpg", "png" ]
+  }
+}

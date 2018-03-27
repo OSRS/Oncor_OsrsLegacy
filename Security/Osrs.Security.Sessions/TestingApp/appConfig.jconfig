@@ -1,0 +1,12 @@
+﻿{
+  "Osrs.Runtime.Logging.LogManager, Osrs.Runtime.Logging.Core": {
+    "provider": "Osrs.Runtime.Logging.Providers.FlatFileLogFactory, Osrs.Runtime.Logging.Providers.FlatFileLogger"
+  },
+  "Osrs.Runtime.Logging.Providers.FlatFileLogFactory, Osrs.Runtime.Logging.Providers.FlatFileLogger": {
+    "fileName": "B:\\Data\\sampleLog.log"
+  },
+  "Osrs.Security.Sessions.SessionManager, Osrs.Security.Sessions.Module": {
+    "provider": "Osrs.Security.Sessions.Providers.MemorySessionProviderFactory, Osrs.Security.Sessions.Module",
+    "duration":  0
+  }
+}

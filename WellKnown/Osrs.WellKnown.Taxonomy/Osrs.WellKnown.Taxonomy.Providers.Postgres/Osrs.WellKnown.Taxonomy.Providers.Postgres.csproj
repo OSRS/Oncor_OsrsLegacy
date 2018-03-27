@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01FA6C5F-F86C-4B5C-AB29-39EAE8F1CCDF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Osrs.WellKnown.Taxonomy.Providers</RootNamespace>
+    <AssemblyName>Osrs.WellKnown.Taxonomy.Providers.Postgres</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="project.json" />
+    <!-- A reference to the entire .NET Framework is automatically included -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Db.cs" />
+    <Compile Include="PgTaxaCommonNameProvider.cs" />
+    <Compile Include="PgTaxaDomainProvider.cs" />
+    <Compile Include="PgTaxaDomainUnitTypeProvider.cs" />
+    <Compile Include="PgTaxaUnitProvider.cs" />
+    <Compile Include="PgTaxaUnitTypeProvider.cs" />
+    <Compile Include="PgTaxonomyProvider.cs" />
+    <Compile Include="PgTaxonomyProviderFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Osrs.Core">
+      <HintPath>..\..\..\..\..\CheckedBuilds\VSOnline\Osrs\Osrs.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Osrs.Data.Core">
+      <HintPath>..\..\..\..\..\CheckedBuilds\VSOnline\Osrs\Osrs.Data.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Osrs.Data.Postgres">
+      <HintPath>..\..\..\..\..\CheckedBuilds\VSOnline\Osrs\Osrs.Data.Postgres.dll</HintPath>
+    </Reference>
+    <Reference Include="Osrs.Runtime">
+      <HintPath>..\..\..\..\..\CheckedBuilds\VSOnline\Osrs\Osrs.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Osrs.Runtime.Configuration.Core">
+      <HintPath>..\..\..\..\..\CheckedBuilds\VSOnline\Osrs\Osrs.Runtime.Configuration.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Osrs.Runtime.Logging.Core">
+      <HintPath>..\..\..\..\..\CheckedBuilds\VSOnline\Osrs\Osrs.Runtime.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Osrs.Security">
+      <HintPath>..\..\..\..\..\CheckedBuilds\VSOnline\Osrs\Osrs.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Osrs.Security.Authorization">
+      <HintPath>..\..\..\..\..\CheckedBuilds\VSOnline\Osrs\Osrs.Security.Authorization.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Osrs.WellKnown.Taxonomy.Module\Osrs.WellKnown.Taxonomy.Module.csproj">
+      <Project>{f323af38-9965-42e6-9dbc-d92356e03899}</Project>
+      <Name>Osrs.WellKnown.Taxonomy.Module</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Osrs.WellKnown.Taxonomy\Osrs.WellKnown.Taxonomy.csproj">
+      <Project>{a61a5a64-313b-4049-b3b2-6039be4f4562}</Project>
+      <Name>Osrs.WellKnown.Taxonomy</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+</Project>

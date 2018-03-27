@@ -1,0 +1,14 @@
+﻿{
+  "supports": {},
+  "dependencies": {
+    "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
+    "NETStandard.Library": "2.0.0",
+    "System.Buffers": "4.4.0",
+    "System.Diagnostics.Contracts": "4.3.0",
+    "System.Globalization": "4.3.0",
+    "System.Text.Encodings.Web": "4.4.0"
+  },
+  "frameworks": {
+    "netstandard1.4": {}
+  }
+}

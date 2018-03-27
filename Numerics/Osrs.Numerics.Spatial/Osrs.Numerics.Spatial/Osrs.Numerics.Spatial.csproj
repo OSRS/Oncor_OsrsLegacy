@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3CCDF20F-BFBB-4600-A9A9-EF3C111BF953}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Osrs.Numerics.Spatial</RootNamespace>
+    <AssemblyName>Osrs.Numerics.Spatial</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalculationMethod.cs" />
+    <Compile Include="CartesianCalculator.cs" />
+    <Compile Include="Coordinates\Coordinate2.cs" />
+    <Compile Include="Coordinates\Coordinate2Utils.cs" />
+    <Compile Include="Coordinates\Coordinate3.cs" />
+    <Compile Include="Coordinates\Coordinate4.cs" />
+    <Compile Include="Coordinates\CoordinateN.cs" />
+    <Compile Include="Coordinates\CoordinatePair2.cs" />
+    <Compile Include="Coordinates\CoordinatePair2Utils.cs" />
+    <Compile Include="Coordinates\CoordinatePair3.cs" />
+    <Compile Include="Coordinates\CoordinateString2.cs" />
+    <Compile Include="Coordinates\ICoordinate.cs" />
+    <Compile Include="Envelope2.cs" />
+    <Compile Include="Envelope3.cs" />
+    <Compile Include="Envelope4.cs" />
+    <Compile Include="EnvelopeN.cs" />
+    <Compile Include="GeodesicCalculator.cs" />
+    <Compile Include="Geometry\GeometryFactory2Base.cs" />
+    <Compile Include="Geometry\IGeometry.cs" />
+    <Compile Include="Geometry\IGeometryFactory.cs" />
+    <Compile Include="Geometry\IPointCollection.cs" />
+    <Compile Include="Geometry\ISimpleGeometry.cs" />
+    <Compile Include="Geometry\Line2.cs" />
+    <Compile Include="Geometry\LineChain2.cs" />
+    <Compile Include="Geometry\LineChainBag2.cs" />
+    <Compile Include="Geometry\LineChainSet2.cs" />
+    <Compile Include="Geometry\LineSegment2.cs" />
+    <Compile Include="Geometry\Point2.cs" />
+    <Compile Include="Geometry\PointBag2.cs" />
+    <Compile Include="Geometry\PointSet2.cs" />
+    <Compile Include="Geometry\Polygon2.cs" />
+    <Compile Include="Geometry\PolygonBag2.cs" />
+    <Compile Include="Geometry\PolygonSet2.cs" />
+    <Compile Include="Geometry\Polyline2.cs" />
+    <Compile Include="Geometry\PolylineBag2.cs" />
+    <Compile Include="Geometry\PolylineSet2.cs" />
+    <Compile Include="Geometry\Ray2.cs" />
+    <Compile Include="Geometry\Ring2.cs" />
+    <Compile Include="Geometry\RingBag2.cs" />
+    <Compile Include="Geometry\RingSet2.cs" />
+    <Compile Include="Geometry\Geometry2Bag.cs" />
+    <Compile Include="Geometry\Geometry2Set.cs" />
+    <Compile Include="IEnvelope.cs" />
+    <Compile Include="Operations\Edge.cs" />
+    <Compile Include="Operations\Node.cs" />
+    <Compile Include="Operations\NodeFront.cs" />
+    <Compile Include="Operations\PlanarChainGraph.cs" />
+    <Compile Include="Operations\PlanarGraph.cs" />
+    <Compile Include="Operations\PlanarPointGraph.cs" />
+    <Compile Include="Operations\PlanarSegmentGraph.cs" />
+    <Compile Include="Operations\PointGraph.cs" />
+    <Compile Include="Operations\PointUtils.cs" />
+    <Compile Include="Operations\SegmentGroup.cs" />
+    <Compile Include="Operations\GeometryUtils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpatialException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Osrs.Core">
+      <HintPath>..\..\..\..\..\CheckedBuilds\VSOnline\Osrs\Osrs.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

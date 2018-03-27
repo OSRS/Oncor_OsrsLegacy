@@ -1,0 +1,18 @@
+﻿{
+  "Osrs.Runtime.Logging.LogManager, Osrs.Runtime.Logging": {
+    "provider": "Osrs.Runtime.Logging.Providers.FlatFileLogFactory, Osrs.Runtime.Logging"
+  },
+  "Osrs.Runtime.Logging.Providers.FlatFileLogFactory, Osrs.Runtime.Logging": {
+    "fileName": "C:\\Workspace\\sampleLog.log"
+  },
+  "Osrs.Hosting.AppHosting.HostServiceProxy, Osrs.Hosting.AppHosting": {
+    "appListFileName": ".\\applist.txt"
+  },
+  "AppHost.Program, AppHost": {
+    "hostList": [
+      "HostingCoreTestHost.Hosted1, HostingCoreTestHost",
+      "HostingCoreTestHost.Hosted2, HostingCoreTestHost",
+      "HostingCoreTestHost.Hosted1, HostingCoreTestHost"
+    ]
+  }
+}

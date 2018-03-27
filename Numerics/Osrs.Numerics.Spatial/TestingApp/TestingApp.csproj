@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F3968B1-83D6-4D2B-8B66-E3949BA7DC37}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestingApp</RootNamespace>
+    <AssemblyName>TestingApp</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Npgsql, Version=3.2.5.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.3.2.5\lib\net451\Npgsql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Osrs.Core">
+      <HintPath>..\..\..\..\..\CheckedBuilds\VSOnline\Osrs\Osrs.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Osrs.Numerics">
+      <HintPath>..\..\..\..\..\CheckedBuilds\VSOnline\Osrs\Osrs.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.4.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Osrs.Numerics.Spatial.Geometry.Double\Osrs.Numerics.Spatial.Geometry.Double.csproj">
+      <Project>{ad62ba47-05c5-4de1-b292-ea16fd8530f3}</Project>
+      <Name>Osrs.Numerics.Spatial.Geometry.Double</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Osrs.Numerics.Spatial.Geometry.GeoJson\Osrs.Numerics.Spatial.Geometry.GeoJson.csproj">
+      <Project>{ed316826-48e8-4898-aa6f-f088ef52d789}</Project>
+      <Name>Osrs.Numerics.Spatial.Geometry.GeoJson</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Osrs.Numerics.Spatial.Geometry.Ogc\Osrs.Numerics.Spatial.Geometry.Ogc.csproj">
+      <Project>{bd5c150e-2fd7-4c44-a99f-4e7b330846ac}</Project>
+      <Name>Osrs.Numerics.Spatial.Geometry.Ogc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Osrs.Numerics.Spatial.Postgres\Osrs.Numerics.Spatial.Postgres.csproj">
+      <Project>{24bf6230-a784-4814-a868-8001f294ec30}</Project>
+      <Name>Osrs.Numerics.Spatial.Postgres</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Osrs.Numerics.Spatial\Osrs.Numerics.Spatial.csproj">
+      <Project>{3ccdf20f-bfbb-4600-a9a9-ef3c111bf953}</Project>
+      <Name>Osrs.Numerics.Spatial</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

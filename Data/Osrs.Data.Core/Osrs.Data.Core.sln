@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.Data.Core", "Osrs.Data.Core\Osrs.Data.Core.csproj", "{FDA752C8-0C42-472F-AABA-2AB6B83EBD86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.Data.Postgres", "Osrs.Data.Postgres\Osrs.Data.Postgres.csproj", "{2D330E0F-E733-45AC-B1F2-48F4058E5864}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDA752C8-0C42-472F-AABA-2AB6B83EBD86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDA752C8-0C42-472F-AABA-2AB6B83EBD86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDA752C8-0C42-472F-AABA-2AB6B83EBD86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDA752C8-0C42-472F-AABA-2AB6B83EBD86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D330E0F-E733-45AC-B1F2-48F4058E5864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D330E0F-E733-45AC-B1F2-48F4058E5864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D330E0F-E733-45AC-B1F2-48F4058E5864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D330E0F-E733-45AC-B1F2-48F4058E5864}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

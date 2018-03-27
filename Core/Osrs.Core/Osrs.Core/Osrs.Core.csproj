@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53BF0807-8939-4729-A4DD-D614C9E8FA22}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Osrs</RootNamespace>
+    <AssemblyName>Osrs.Core</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collections\Generic\CollectionUtils.cs" />
+    <Compile Include="Collections\Generic\IKeyValuePair.cs" />
+    <Compile Include="Collections\NamedEntityBag.cs" />
+    <Compile Include="Collections\Specialized\INameSet.cs" />
+    <Compile Include="Collections\Specialized\LeakyResizableArray.cs" />
+    <Compile Include="Collections\Specialized\ParsedStringItem.cs" />
+    <Compile Include="Collections\TypedItem.cs" />
+    <Compile Include="CoreUtils.cs" />
+    <Compile Include="Data\AbstractNamedEntity.cs" />
+    <Compile Include="Data\ChangeCallbackHandler.cs" />
+    <Compile Include="Data\ChangeDetectedItem.cs" />
+    <Compile Include="Data\CompoundIdentity.cs" />
+    <Compile Include="Data\DbOpStatus.cs" />
+    <Compile Include="Data\Generators\GuidGenerator.cs" />
+    <Compile Include="Data\Generators\IGenerator.cs" />
+    <Compile Include="Data\Generators\Int64SequenceGenerator.cs" />
+    <Compile Include="Data\HierarchicalName.cs" />
+    <Compile Include="Data\IIdentity.cs" />
+    <Compile Include="Data\ItemNotFoundException.cs" />
+    <Compile Include="Data\Validation\BooleanValidator.cs" />
+    <Compile Include="Data\Validation\GuidValidator.cs" />
+    <Compile Include="Data\Validation\Int16Validator.cs" />
+    <Compile Include="Data\Validation\IValidator.cs" />
+    <Compile Include="Data\ValuePair.cs" />
+    <Compile Include="DateTimeInstant.cs" />
+    <Compile Include="EventArgs.cs" />
+    <Compile Include="IConverter.cs" />
+    <Compile Include="IEmpty.cs" />
+    <Compile Include="IIndexedItem.cs" />
+    <Compile Include="IO\IConnection.cs" />
+    <Compile Include="IO\IOpenable.cs" />
+    <Compile Include="IO\StreamWriterTextWriter.cs" />
+    <Compile Include="Net\BalancingMode.cs" />
+    <Compile Include="Net\BindInfoProtocol.cs" />
+    <Compile Include="Net\IListener.cs" />
+    <Compile Include="Net\WellKnownPorts.cs" />
+    <Compile Include="Numerics\AngleUtils.cs" />
+    <Compile Include="Numerics\Constants.cs" />
+    <Compile Include="Numerics\ExactMathUtils.cs" />
+    <Compile Include="Numerics\IAngle.cs" />
+    <Compile Include="Numerics\INumericOperation.cs" />
+    <Compile Include="Numerics\ISigned.cs" />
+    <Compile Include="Numerics\MathException.cs" />
+    <Compile Include="Numerics\MathUtils.cs" />
+    <Compile Include="Numerics\Precision.cs" />
+    <Compile Include="Numerics\ValueRange.cs" />
+    <Compile Include="Numerics\VariableSet.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection\NameReflectionUtils.cs" />
+    <Compile Include="Reflection\TypeNameReference.cs" />
+    <Compile Include="Runtime\ConstructorLatch.cs" />
+    <Compile Include="Runtime\ContextBase.cs" />
+    <Compile Include="Runtime\HashCodeCombiner.cs" />
+    <Compile Include="Runtime\IFactory.cs" />
+    <Compile Include="Runtime\ILatch.cs" />
+    <Compile Include="Runtime\InstanceCountLimitedBase.cs" />
+    <Compile Include="Runtime\MethodContract.cs" />
+    <Compile Include="Runtime\SemanticVersion.cs" />
+    <Compile Include="Runtime\SingletonBase.cs" />
+    <Compile Include="Runtime\StatusedReturn.cs" />
+    <Compile Include="Runtime\TypeMismatchException.cs" />
+    <Compile Include="Security\SecurityException.cs" />
+    <Compile Include="Security\UserType.cs" />
+    <Compile Include="Text\CharUtils.cs" />
+    <Compile Include="Text\ITextWriter.cs" />
+    <Compile Include="Text\ObjectToStringBuilder.cs" />
+    <Compile Include="Text\ParseUtils.cs" />
+    <Compile Include="Text\TextUtils.cs" />
+    <Compile Include="Threading\CancellationToken.cs" />
+    <Compile Include="Threading\CancellationTokenSource.cs" />
+    <Compile Include="Threading\SharedCancellationTokenSource.cs" />
+    <Compile Include="Threading\Timeout.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

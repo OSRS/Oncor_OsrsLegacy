@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.Runtime.Logging.Core", "Osrs.Runtime.Logging.Core\Osrs.Runtime.Logging.Core.csproj", "{C2F2F5BA-0AFF-4D50-9178-508BA745B854}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.Runtime.Logging.Providers.FlatFileLogger", "Osrs.Runtime.Logging.Providers.FlatFileLogger\Osrs.Runtime.Logging.Providers.FlatFileLogger.csproj", "{842ED5B9-A5D1-4D97-9D7B-C62D360F225C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingApp", "TestingApp\TestingApp.csproj", "{1EB02C03-04D1-487D-B39E-8CFBCB981A2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2F2F5BA-0AFF-4D50-9178-508BA745B854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2F2F5BA-0AFF-4D50-9178-508BA745B854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2F2F5BA-0AFF-4D50-9178-508BA745B854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2F2F5BA-0AFF-4D50-9178-508BA745B854}.Release|Any CPU.Build.0 = Release|Any CPU
+		{842ED5B9-A5D1-4D97-9D7B-C62D360F225C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{842ED5B9-A5D1-4D97-9D7B-C62D360F225C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{842ED5B9-A5D1-4D97-9D7B-C62D360F225C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{842ED5B9-A5D1-4D97-9D7B-C62D360F225C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EB02C03-04D1-487D-B39E-8CFBCB981A2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EB02C03-04D1-487D-B39E-8CFBCB981A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EB02C03-04D1-487D-B39E-8CFBCB981A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EB02C03-04D1-487D-B39E-8CFBCB981A2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

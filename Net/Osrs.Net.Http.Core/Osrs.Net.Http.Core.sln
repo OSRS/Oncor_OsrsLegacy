@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.Net.Http.Core", "Osrs.Net.Http.Core\Osrs.Net.Http.Core.csproj", "{FDCCCB7A-93DC-4DE3-98A1-B76808C4BA3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.Net.Http.Server", "Osrs.Net.Http.Server\Osrs.Net.Http.Server.csproj", "{E1CDC4D8-290D-4E28-BCEC-3BFE87C3ADA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingApp", "TestingApp\TestingApp.csproj", "{4EA08A1B-3BC6-4644-B871-44CEF9340B5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDCCCB7A-93DC-4DE3-98A1-B76808C4BA3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDCCCB7A-93DC-4DE3-98A1-B76808C4BA3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDCCCB7A-93DC-4DE3-98A1-B76808C4BA3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDCCCB7A-93DC-4DE3-98A1-B76808C4BA3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1CDC4D8-290D-4E28-BCEC-3BFE87C3ADA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1CDC4D8-290D-4E28-BCEC-3BFE87C3ADA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1CDC4D8-290D-4E28-BCEC-3BFE87C3ADA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1CDC4D8-290D-4E28-BCEC-3BFE87C3ADA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EA08A1B-3BC6-4644-B871-44CEF9340B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EA08A1B-3BC6-4644-B871-44CEF9340B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EA08A1B-3BC6-4644-B871-44CEF9340B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EA08A1B-3BC6-4644-B871-44CEF9340B5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

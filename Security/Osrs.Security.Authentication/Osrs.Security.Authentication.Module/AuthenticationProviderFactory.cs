@@ -1,0 +1,43 @@
+﻿//Copyright 2017 Open Science, Engineering, Research and Development Information Systems Open, LLC. (OSRS Open)
+//   Licensed under the Apache License, Version 2.0 (the "License");
+//   you may not use this file except in compliance with the License.
+//   You may obtain a copy of the License at
+//       http://www.apache.org/licenses/LICENSE-2.0
+//   Unless required by applicable law or agreed to in writing, software
+//   distributed under the License is distributed on an "AS IS" BASIS,
+//   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//   See the License for the specific language governing permissions and
+//   limitations under the License.
+
+using Osrs.Runtime;
+
+namespace Osrs.Security.Authentication
+{
+    public abstract class AuthenticationProviderFactory : SubclassableSingletonBase<AuthenticationProviderFactory>
+    {
+        protected AuthenticationProviderFactory()
+        { }
+
+        protected internal abstract bool Initialize();
+
+        protected internal abstract IAuthenticationProvider GetProvider(UserSecurityContext context);
+
+        /// <summary>
+        /// Mechanism for an authentication provider to get access to the credential store being used
+        /// </summary>
+        /// <returns></returns>
+        protected ICredentialStore GetCredentialProvider()
+        {
+            return AuthenticationManager.Instance.GetCredentialProvider();
+        }
+
+        /// <summary>
+        /// Mechanism for an authentication provider to get access to the credential store being used
+        /// </summary>
+        /// <returns></returns>
+        protected ICredentialStore GetCredentialProvider(UserSecurityContext context)
+        {
+            return AuthenticationManager.Instance.GetCredentialProvider(context);
+        }
+    }
+}

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.Runtime.Configuration.Core", "Osrs.Runtime.Configuration.Core\Osrs.Runtime.Configuration.Core.csproj", "{529B527D-1345-44A2-A4F3-FE2956611F8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingApp", "TestingApp\TestingApp.csproj", "{8E14BD1E-C655-4097-BB4E-F2CA5070472D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.Runtime.Configuration.Providers.Postgres", "Osrs.Runtime.Configuration.Providers.Postgres\Osrs.Runtime.Configuration.Providers.Postgres.csproj", "{3B61AC25-6D5D-47ED-93AE-0408518B1F26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{529B527D-1345-44A2-A4F3-FE2956611F8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{529B527D-1345-44A2-A4F3-FE2956611F8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{529B527D-1345-44A2-A4F3-FE2956611F8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{529B527D-1345-44A2-A4F3-FE2956611F8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E14BD1E-C655-4097-BB4E-F2CA5070472D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E14BD1E-C655-4097-BB4E-F2CA5070472D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E14BD1E-C655-4097-BB4E-F2CA5070472D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E14BD1E-C655-4097-BB4E-F2CA5070472D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B61AC25-6D5D-47ED-93AE-0408518B1F26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B61AC25-6D5D-47ED-93AE-0408518B1F26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B61AC25-6D5D-47ED-93AE-0408518B1F26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B61AC25-6D5D-47ED-93AE-0408518B1F26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

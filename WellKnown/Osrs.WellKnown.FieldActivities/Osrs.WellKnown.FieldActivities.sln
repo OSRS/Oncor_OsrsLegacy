@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.WellKnown.FieldActivities", "Osrs.WellKnown.FieldActivities\Osrs.WellKnown.FieldActivities.csproj", "{525FC1DD-462C-4659-B86A-16C40A54C628}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.WellKnown.FieldActivities.Module", "Osrs.WellKnown.FieldActivities.Module\Osrs.WellKnown.FieldActivities.Module.csproj", "{0D34907C-414F-4E9C-856B-232F6FC793F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.WellKnown.FieldActivities.Providers.Postgres", "Osrs.WellKnown.FieldActivities.Providers.Postgres\Osrs.WellKnown.FieldActivities.Providers.Postgres.csproj", "{8E04F4ED-2DB3-411A-84F7-75FF54AB3741}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingApp", "TestingApp\TestingApp.csproj", "{673CC079-0778-427F-8775-F5455CB14C99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{525FC1DD-462C-4659-B86A-16C40A54C628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{525FC1DD-462C-4659-B86A-16C40A54C628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{525FC1DD-462C-4659-B86A-16C40A54C628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{525FC1DD-462C-4659-B86A-16C40A54C628}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D34907C-414F-4E9C-856B-232F6FC793F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D34907C-414F-4E9C-856B-232F6FC793F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D34907C-414F-4E9C-856B-232F6FC793F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D34907C-414F-4E9C-856B-232F6FC793F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E04F4ED-2DB3-411A-84F7-75FF54AB3741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E04F4ED-2DB3-411A-84F7-75FF54AB3741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E04F4ED-2DB3-411A-84F7-75FF54AB3741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E04F4ED-2DB3-411A-84F7-75FF54AB3741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{673CC079-0778-427F-8775-F5455CB14C99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{673CC079-0778-427F-8775-F5455CB14C99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{673CC079-0778-427F-8775-F5455CB14C99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{673CC079-0778-427F-8775-F5455CB14C99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
