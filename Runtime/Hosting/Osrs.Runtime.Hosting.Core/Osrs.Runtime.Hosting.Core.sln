@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.Runtime.Hosting.Core", "Osrs.Runtime.Hosting.Core\Osrs.Runtime.Hosting.Core.csproj", "{F9E6B3F1-7DEE-4F3C-8EF3-1DF9C3582AAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrs.Runtime.Hosting.AppHosting", "Osrs.Runtime.Hosting.AppHosting\Osrs.Runtime.Hosting.AppHosting.csproj", "{3E5D005B-4A63-4B54-B3A3-C30E7A4EF4B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppHostService", "AppHostService\AppHostService.csproj", "{B8977ACB-A27B-481F-B7CE-1DC344C7D58C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostingCoreTestHost", "HostingCoreTestHost\HostingCoreTestHost.csproj", "{F8DDDE57-878D-4803-91B6-1D350E99A348}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingApp", "TestingApp\TestingApp.csproj", "{93D9EC42-5A4C-4DC1-9B82-1159B6EA6626}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppHost", "AppHost\AppHost.csproj", "{52AF008B-BBDA-4FA0-837B-A910E4ED7217}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9E6B3F1-7DEE-4F3C-8EF3-1DF9C3582AAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9E6B3F1-7DEE-4F3C-8EF3-1DF9C3582AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9E6B3F1-7DEE-4F3C-8EF3-1DF9C3582AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9E6B3F1-7DEE-4F3C-8EF3-1DF9C3582AAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E5D005B-4A63-4B54-B3A3-C30E7A4EF4B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E5D005B-4A63-4B54-B3A3-C30E7A4EF4B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E5D005B-4A63-4B54-B3A3-C30E7A4EF4B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E5D005B-4A63-4B54-B3A3-C30E7A4EF4B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8977ACB-A27B-481F-B7CE-1DC344C7D58C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8977ACB-A27B-481F-B7CE-1DC344C7D58C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8977ACB-A27B-481F-B7CE-1DC344C7D58C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8977ACB-A27B-481F-B7CE-1DC344C7D58C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8DDDE57-878D-4803-91B6-1D350E99A348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8DDDE57-878D-4803-91B6-1D350E99A348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8DDDE57-878D-4803-91B6-1D350E99A348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8DDDE57-878D-4803-91B6-1D350E99A348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93D9EC42-5A4C-4DC1-9B82-1159B6EA6626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93D9EC42-5A4C-4DC1-9B82-1159B6EA6626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93D9EC42-5A4C-4DC1-9B82-1159B6EA6626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93D9EC42-5A4C-4DC1-9B82-1159B6EA6626}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52AF008B-BBDA-4FA0-837B-A910E4ED7217}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52AF008B-BBDA-4FA0-837B-A910E4ED7217}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52AF008B-BBDA-4FA0-837B-A910E4ED7217}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52AF008B-BBDA-4FA0-837B-A910E4ED7217}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

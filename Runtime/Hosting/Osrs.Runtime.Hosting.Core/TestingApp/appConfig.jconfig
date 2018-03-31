@@ -1,0 +1,11 @@
+﻿{
+	"Osrs.Runtime.Logging.Providers.FlatFileLogFactory, Osrs.Runtime.Logging.Providers.FlatFileLogger": {
+		"fileName": "B:\\Apps\\AppHost\\sampleLog.log"
+	},
+	"Osrs.Runtime.Logging.LogManager, Osrs.Runtime.Logging.Core": {
+		"provider": "Osrs.Runtime.Logging.Providers.FlatFileLogFactory, Osrs.Runtime.Logging.Providers.FlatFileLogger"
+	},
+	"Osrs.Runtime.Hosting.AppHosting.HostServiceProxy, Osrs.Runtime.Hosting.AppHosting": {
+		"appListFileName": ".\\applist.txt"
+	}
+}
